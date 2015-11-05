@@ -1,4 +1,11 @@
-@import "bourbon";
+@import "bourbon/bourbon";
 @import "base/grid-settings";
 @import "neat";
 @import "base/base";
+@import "refills/hero";
+@import "refills/navigation";
+@import "refills/icon-bullet-points";
+
+.container {
+  @include outer-container();
+}
