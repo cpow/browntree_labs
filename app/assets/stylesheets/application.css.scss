@@ -3,8 +3,9 @@
 @import "neat";
 @import "base/base";
 @import "refills/hero";
-@import "refills/navigation";
+@import "refills/centered-navigation";
 @import "refills/icon-bullet-points";
+@import "refills/footer-2";
 
 .container {
   @include outer-container();

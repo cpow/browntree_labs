@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BrowntreeLabs</title>
+  <title>BrownTreeLabs</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render partial: "refills/navigation" %>
-<%= yield %>
+<div class="wrapper-for-content-outside-of-footer">
+  <%= render partial: "refills/centered_navigation" %>
+  <%= yield %>
+</div>
+<%= render partial: "refills/footer_2" %>
 </body>
 </html>
