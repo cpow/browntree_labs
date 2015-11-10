@@ -1,0 +1,11 @@
+<h1>Contact Us</h1>
+
+<%= form_for @lead do |f| %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
