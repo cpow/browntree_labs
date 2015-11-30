@@ -12,7 +12,7 @@ class LeadsController < ApplicationController
     if @lead.save
       redirect_to [@lead], notice: "Success"
     else
-      #we'll handle this some other time
+      render :new
     end
   end
 end

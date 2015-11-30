@@ -6,7 +6,34 @@
 @import "refills/centered-navigation";
 @import "refills/icon-bullet-points";
 @import "refills/footer-2";
+@import "font-awesome";
 
 .container {
   @include outer-container();
+}
+
+.landing {
+  h1 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+
+    @include media($large-screen) {
+      font-size: 3em;
+    }
+  }
+  img {
+    max-height: 10em;
+  }
+}
+
+.process {
+  text-align: center;
+  i {
+    font-size: 4em;
+    padding: 40px;
+    margin-bottom: 10px;
+  }
 }

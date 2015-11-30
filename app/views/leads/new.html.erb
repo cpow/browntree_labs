@@ -1,11 +1,24 @@
-<h1>Contact Us</h1>
+<div class="container">
+  <fieldset>
+    <legend>
+      <h1>
+        Contact Us
+      </h1>
+    </legend>
+    <p>
+    We are always open to hearing your ideas! Please tell us a little about yourself and we'll get back very shortly. Thank you!
+    </p>
+    <%= form_for @lead do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
 
-<%= form_for @lead do |f| %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+      <%= f.label :notes, "About yourself, or company" %>
+      <%= f.text_area(:notes, rows: 20) %>
 
-  <%= f.submit %>
-<% end %>
+      <%= f.submit "Send" %>
+    <% end %>
+  </fieldset>
+</div>

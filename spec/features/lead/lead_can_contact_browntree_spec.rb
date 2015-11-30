@@ -10,7 +10,7 @@ feature "lead can contact browntree", type: :feature do
 
     fill_in("Email", with: "someone@example.com")
     fill_in("Name", with: "some new lead")
-    click_on("Create Lead")
+    click_on("Send")
 
     lead = Lead.last
 
