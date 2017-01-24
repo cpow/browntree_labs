@@ -15,6 +15,7 @@ gem "bourbon"
 gem "bitters"
 gem "refills"
 
+gem "puma"
 gem "font-awesome-rails"
 
 group :production do
