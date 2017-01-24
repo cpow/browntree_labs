@@ -10,6 +10,6 @@ module BrowntreeLabs
       g.test_framework :rspec
     end
     config.active_record.raise_in_transactional_callbacks = true
-    config.serve_static_assets = true
+    config.serve_static_files = true
   end
 end
