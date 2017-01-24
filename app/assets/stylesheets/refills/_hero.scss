@@ -11,7 +11,7 @@
   $gradient-angle: 10deg;
   $hero-image: 'paris-trees.png';
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  @include background(asset-url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: #fff;
   background-position: top;
   background-repeat: no-repeat;
