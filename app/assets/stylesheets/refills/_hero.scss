@@ -9,14 +9,18 @@
   $hero-background-bottom: #fff;
   $hero-color: $dark-gray;
   $gradient-angle: 10deg;
-  $hero-image: '';
+  $hero-image: 'paris-trees.png';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
+  background-color: #fff;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  img {
+    opacity: 0.5;
+  }
   padding-bottom: 3em;
+
 
   .hero-logo img {
     height: 4em;
@@ -33,6 +37,7 @@
 
     .hero-copy {
       text-align: center;
+      background: rgba(255,255,255,0.75);
       h1 {
         font-size: 3em;
         margin-bottom: 0.5em;
@@ -44,12 +49,13 @@
 
       p {
         span {
+          background: rgba(255,255,255,0.75);
           color: $blue;
         }
         font-size: 1.4em;
         font-weight: 200;
         line-height: 1.4em;
-        margin: 0 auto 3em auto; 
+        margin: 0 auto 2em auto;
 
         @include media($large-screen) {
           font-size: 2em;
