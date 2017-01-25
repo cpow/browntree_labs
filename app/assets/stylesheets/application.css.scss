@@ -6,7 +6,13 @@
 @import "refills/centered-navigation";
 @import "refills/icon-bullet-points";
 @import "refills/footer-2";
+@import "refills/flashes";
+@import "refills/parallax";
 @import "font-awesome";
+
+.field_with_errors input {
+  border: 1px solid red;
+}
 
 .container {
   @include outer-container();
@@ -27,6 +33,21 @@
   img {
     max-height: 10em;
   }
+
+  h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+
+    @include media($large-screen) {
+      font-size: 2em;
+    }
+  }
+}
+
+article {
+  font-size: 1.2em;
 }
 
 .process {

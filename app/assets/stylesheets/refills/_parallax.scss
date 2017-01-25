@@ -1,0 +1,49 @@
+$parallax-window-height: 40em;
+$parallax-background-height: $parallax-window-height * 1.5;
+
+.parallax-window {
+  height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  margin: auto;
+  text-align: center;
+  background: rgba(255,255,255,0.75);
+  @include outer-container;
+  @include clearfix;
+  color: $dark-gray;
+  background: rgba(255,255,255,0.75);
+  margin-top: 40px;
+  position: relative;
+  z-index: 9;
+
+  h1 {
+    padding-top: 0.3em;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+
+    @include media($large-screen) {
+      font-size: 4em;
+    }
+  }
+
+}
+
+.parallax-background {
+  background: asset-url("notre-dame-walk.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+// Based on http://codepen.io/skeurentjes/

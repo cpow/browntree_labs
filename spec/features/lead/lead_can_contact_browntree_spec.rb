@@ -12,9 +12,6 @@ feature "lead can contact browntree", type: :feature do
     fill_in("Name", with: "some new lead")
     click_on("Send")
 
-    lead = Lead.last
-
-    expect(page).to have_content("Success")
-    expect(page).to have_content(lead.name)
+    expect(page).to have_content("Thank you")
   end
 end

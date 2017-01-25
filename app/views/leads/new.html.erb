@@ -1,13 +1,9 @@
-<div class="container">
+<div class="container landing">
+  <h1>Contact Me</h1>
+  <p style="text-align:center;">
+  I'm always open to hearing your ideas! Please tell me a little about yourself and I'll get back very shortly. Thank you!
+  </p>
   <fieldset>
-    <legend>
-      <h1>
-        Contact Us
-      </h1>
-    </legend>
-    <p>
-    We are always open to hearing your ideas! Please tell us a little about yourself and we'll get back very shortly. Thank you!
-    </p>
     <%= form_for @lead do |f| %>
       <%= f.label :email %>
       <%= f.email_field :email %>
@@ -16,7 +12,7 @@
       <%= f.text_field :name %>
 
       <%= f.label :notes, "About yourself, or company" %>
-      <%= f.text_area(:notes, rows: 20) %>
+      <%= f.text_area(:notes, rows: 10) %>
 
       <%= f.submit "Send" %>
     <% end %>
