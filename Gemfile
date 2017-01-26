@@ -9,7 +9,7 @@ gem "jquery-rails"
 gem "jbuilder", "~> 2.0"
 gem "high_voltage"
 gem "pg"
-
+gem "rack-cors"
 gem "neat"
 gem "bourbon"
 gem "bitters"
